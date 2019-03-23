@@ -9,6 +9,8 @@ public class Mover : MonoBehaviour
 
     NavMeshAgent playerNavMeshAgent;
 
+    Ray lastRay;
+
     void Start()
     {
         playerNavMeshAgent = GetComponent<NavMeshAgent>();
@@ -16,6 +18,12 @@ public class Mover : MonoBehaviour
     
     void Update()
     {
+        if(Input.GetMouseButtonDown(0))
+        {
+            lastRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+        }
+        Debug.DrawRay(lastRay.origin, lastRay.direction * 100);
+
         playerNavMeshAgent.SetDestination(target.position);
     }
 }
