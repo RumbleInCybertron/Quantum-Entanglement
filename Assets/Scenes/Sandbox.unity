@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -88,7 +88,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 4adabd504138e0b4895bcea8bd7b6d01,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -1661,17 +1662,17 @@ PrefabInstance:
     - target: {fileID: 4495119496072986461, guid: 298435d261d4c4642974e12a23af5d7c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.14
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4495119496072986461, guid: 298435d261d4c4642974e12a23af5d7c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4495119496072986461, guid: 298435d261d4c4642974e12a23af5d7c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -19.7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4495119496072986461, guid: 298435d261d4c4642974e12a23af5d7c,
         type: 3}
@@ -1715,46 +1716,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 298435d261d4c4642974e12a23af5d7c, type: 3}
---- !u!1 &9156915039625568089 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3666443246108807119, guid: 298435d261d4c4642974e12a23af5d7c,
-    type: 3}
-  m_PrefabInstance: {fileID: 9156915039625568088}
-  m_PrefabAsset: {fileID: 0}
---- !u!195 &9156915039625568090
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9156915039625568089}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 10
-  m_Acceleration: 20
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 1
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
---- !u!114 &9156915039625568091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9156915039625568089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 486662486e37cc949aeca13a086bea45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &9156915039625568095 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4495119496072986461, guid: 298435d261d4c4642974e12a23af5d7c,
