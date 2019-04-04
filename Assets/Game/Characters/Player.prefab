@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 9156915039625568091}
   - component: {fileID: 1724317570}
   - component: {fileID: 5931868196078196930}
+  - component: {fileID: 718093161201997607}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -138,6 +139,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b1c424eb240eab4a825305d060ee316, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &718093161201997607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3666443246108807119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54aac512d29cf7843bf775d9d6d77628, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &9156915040916007874
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -191,6 +204,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 413756, guid: 6b9bfb73d6796d3428598337f0d0aa6e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 107000, guid: 6b9bfb73d6796d3428598337f0d0aa6e, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9505858, guid: 6b9bfb73d6796d3428598337f0d0aa6e, type: 3}
