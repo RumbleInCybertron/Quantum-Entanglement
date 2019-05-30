@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿ using UnityEngine;
 
 namespace RPG.Control
 {
@@ -10,11 +10,11 @@ namespace RPG.Control
     {
         private void Update()
         {
-            InteractWithCombat();
-            InteractWithMovement();
+            if(InteractWithCombat()) return;    // TODO Remove later: return early if interacted with combat. Works like a continue. It skips over the rest of the body (i.e. exits Update)
+            if(InteractWithMovement()) return;
         }
 
-        private void InteractWithCombat()
+        private bool InteractWithCombat()
         {
             RaycastHit[] hits = Physics.RaycastAll(GetMouseRay());
             foreach (RaycastHit hit in hits)
@@ -24,27 +24,26 @@ namespace RPG.Control
 
                if(Input.GetMouseButtonDown(0))
                {
-                    GetComponent<Fighter>().Attack(target);
+                    GetComponent<Fighter>().Attack(target);     // TODO Remove later: who we are going to attack when we start the attacking process.
                }
+               return true;                                     // TODO Remove later: Returns even if the player is only hovering over an enemy with the mouse
             }
+            return false;                                       // TODO Remove later: Didn't find any combat targets to interact with.
         }
 
-        private void InteractWithMovement()
-        {
-            if (Input.GetMouseButton(0))
-            {
-                MoveToCursor();
-            }
-        }
-
-        private void MoveToCursor()
+        private bool InteractWithMovement()
         {
             RaycastHit hit;
             bool hasHit = Physics.Raycast(GetMouseRay(), out hit);
             if (hasHit)
             {
-                GetComponent<Mover>().MoveTo(hit.point);
+               if( Input.GetMouseButton(0))
+                {
+                    GetComponent<Mover>().MoveTo(hit.point);
+                }
+                return true;
             }
+            return false;
         }
 
         private static Ray GetMouseRay()
