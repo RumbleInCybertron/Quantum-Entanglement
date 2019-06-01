@@ -21,6 +21,7 @@ namespace RPG.Combat
             else
             {
                 GetComponent<Mover>().Cancel();
+                GetComponent<Animator>().SetTrigger("attack");
             }
         }
 
@@ -29,7 +30,7 @@ namespace RPG.Combat
             return Vector3.Distance(transform.position, target.position) < weaponRange;
         }
 
-        public void Attack(CombatTarget combatTarget)     // TODO Remove later: target is whom we are going to attack
+        public void Attack(CombatTarget combatTarget)
         {
             GetComponent<ActionScheduler>().StartAction(this);
             target = combatTarget.transform;
@@ -38,6 +39,12 @@ namespace RPG.Combat
         public void Cancel()
         {
             target = null;
+        }
+
+        // Animation Event
+        void Hit()
+        {
+
         }
     }
 }
