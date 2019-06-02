@@ -9,6 +9,8 @@ namespace RPG.Combat
     {
         [SerializeField] float weaponRange = 2f;
         [SerializeField] float timeBetweenAttacks = 1f;
+        [SerializeField] float weaponDamage = 5f;
+
 
         Transform target;
         float timeSinceLastAttack = 0f;
@@ -17,7 +19,7 @@ namespace RPG.Combat
         {
             timeSinceLastAttack += Time.deltaTime;
 
-            if (target == null) return;             // TODO Remove later: Keeps player from having to hold down the mouse button to move
+            if (target == null) return;             
 
             if (!GetIsInRange())
             {
@@ -32,11 +34,19 @@ namespace RPG.Combat
 
         private void AttackBehavior()
         {
+            // This will trigger the Hit() event.
             if (timeSinceLastAttack > timeBetweenAttacks)
             {
                 GetComponent<Animator>().SetTrigger("attack");
                 timeSinceLastAttack = 0f;
             }
+        }
+
+        // Animation Event
+        void Hit()
+        {
+            Health healthComponent = target.GetComponent<Health>();
+            healthComponent.TakeDamage(weaponDamage);
         }
 
         private bool GetIsInRange()
@@ -46,6 +56,7 @@ namespace RPG.Combat
 
         public void Attack(CombatTarget combatTarget)
         {
+ 
             GetComponent<ActionScheduler>().StartAction(this);
             target = combatTarget.transform;
         }
@@ -53,12 +64,6 @@ namespace RPG.Combat
         public void Cancel()
         {
             target = null;
-        }
-
-        // Animation Event
-        void Hit()
-        {
-
         }
     }
 }
