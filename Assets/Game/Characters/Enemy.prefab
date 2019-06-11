@@ -10,7 +10,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.35
+  m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
@@ -41,7 +41,7 @@ PrefabInstance:
     - target: {fileID: 4495119496072986461, guid: 298435d261d4c4642974e12a23af5d7c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.40510178
       objectReference: {fileID: 0}
     - target: {fileID: 4495119496072986461, guid: 298435d261d4c4642974e12a23af5d7c,
         type: 3}
@@ -51,7 +51,7 @@ PrefabInstance:
     - target: {fileID: 4495119496072986461, guid: 298435d261d4c4642974e12a23af5d7c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 2.4791374
       objectReference: {fileID: 0}
     - target: {fileID: 4495119496072986461, guid: 298435d261d4c4642974e12a23af5d7c,
         type: 3}
@@ -99,11 +99,10 @@ PrefabInstance:
       objectReference: {fileID: 9000000, guid: d288a0e4a2d923b46898986e979da643, type: 3}
     - target: {fileID: 6081763833649972556, guid: 298435d261d4c4642974e12a23af5d7c,
         type: 3}
-      propertyPath: health
+      propertyPath: healthPoints
       value: 20
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 9156915039625568091, guid: 298435d261d4c4642974e12a23af5d7c, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 298435d261d4c4642974e12a23af5d7c, type: 3}
 --- !u!1 &1504580504769193622 stripped
 GameObject:
