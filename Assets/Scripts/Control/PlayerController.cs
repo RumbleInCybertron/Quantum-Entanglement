@@ -20,18 +20,20 @@ namespace RPG.Control
             foreach (RaycastHit hit in hits)
             {
                CombatTarget target = hit.transform.GetComponent<CombatTarget>();
-                if(!GetComponent<Fighter>().CanAttack(target))
+                if (target == null) continue;
+
+                if(!GetComponent<Fighter>().CanAttack(target.gameObject))
                 {
                     continue;
                 }
 
                if(Input.GetMouseButtonDown(0))
                {
-                    GetComponent<Fighter>().Attack(target);     // TODO Remove later: who we are going to attack when we start the attacking process.
+                    GetComponent<Fighter>().Attack(target.gameObject);     
                }
-               return true;                                     // TODO Remove later: Returns even if the player is only hovering over an enemy with the mouse
+               return true;                                     
             }
-            return false;                                       // TODO Remove later: Didn't find any combat targets to interact with.
+            return false;                                       
         }
 
         private bool InteractWithMovement()
