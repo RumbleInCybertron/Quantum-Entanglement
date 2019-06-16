@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using RPG.Movement;
 using RPG.Core;
-using System;
 
 namespace RPG.Combat
 {
@@ -13,7 +12,7 @@ namespace RPG.Combat
 
 
         Health target;
-        float timeSinceLastAttack = 0f;
+        float timeSinceLastAttack = Mathf.Infinity;
 
         private void Update()
         {
