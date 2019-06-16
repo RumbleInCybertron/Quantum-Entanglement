@@ -13,7 +13,7 @@ namespace RPG.Combat
 
 
         Health target;
-        float timeSinceLastAttack = Mathf.Infinity;
+        float timeSinceLastAttack = 0f;
 
         private void Update()
         {
@@ -53,7 +53,7 @@ namespace RPG.Combat
         // Animation Event
         void Hit()
         {
-            if(target == null) return;
+            if(target == null) { return;}
             target.TakeDamage(weaponDamage);
         }
 

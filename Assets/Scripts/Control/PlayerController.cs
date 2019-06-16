@@ -1,28 +1,17 @@
-﻿using UnityEngine;
-using System;
-using RPG.Movement;
-using RPG.Combat;
-using RPG.Core;
+﻿ using UnityEngine;
 
 namespace RPG.Control
 {
-
+    using System;
+    using RPG.Movement;
+    using RPG.Combat;
 
     public class PlayerController : MonoBehaviour
     {
-
-        Health health;
-
-        private void Start()
-        {
-            health = GetComponent<Health>(); 
-        }
-
         private void Update()
         {
-            if (health.IsDead()) return;
-            if (InteractWithCombat()) return;    // TODO Remove later: return early if interacted with combat. Works like a continue. It skips over the rest of the body (i.e. exits Update)
-            if (InteractWithMovement()) return;
+            if(InteractWithCombat()) return;    // TODO Remove later: return early if interacted with combat. Works like a continue. It skips over the rest of the body (i.e. exits Update)
+            if(InteractWithMovement()) return;
         }
 
         private bool InteractWithCombat()
