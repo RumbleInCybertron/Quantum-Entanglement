@@ -20,7 +20,7 @@ namespace RPG.Control
         {
             if (health.IsDead()) return;
             if (InteractWithCombat()) return;    // TODO Remove later: return early if interacted with combat. Works like a continue. It skips over the rest of the body (i.e. exits Update)
-            if(InteractWithMovement()) return;
+            if (InteractWithMovement()) return;
         }
 
         private bool InteractWithCombat()
