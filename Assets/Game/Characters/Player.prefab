@@ -2784,37 +2784,37 @@ PrefabInstance:
     - target: {fileID: 4495119496072986461, guid: 298435d261d4c4642974e12a23af5d7c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 29.51
       objectReference: {fileID: 0}
     - target: {fileID: 4495119496072986461, guid: 298435d261d4c4642974e12a23af5d7c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 99.17
       objectReference: {fileID: 0}
     - target: {fileID: 4495119496072986461, guid: 298435d261d4c4642974e12a23af5d7c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -112.5
       objectReference: {fileID: 0}
     - target: {fileID: 4495119496072986461, guid: 298435d261d4c4642974e12a23af5d7c,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4495119496072986461, guid: 298435d261d4c4642974e12a23af5d7c,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.96584094
       objectReference: {fileID: 0}
     - target: {fileID: 4495119496072986461, guid: 298435d261d4c4642974e12a23af5d7c,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4495119496072986461, guid: 298435d261d4c4642974e12a23af5d7c,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: -0.25913563
       objectReference: {fileID: 0}
     - target: {fileID: 4495119496072986461, guid: 298435d261d4c4642974e12a23af5d7c,
         type: 3}
@@ -2829,25 +2829,22 @@ PrefabInstance:
     - target: {fileID: 4495119496072986461, guid: 298435d261d4c4642974e12a23af5d7c,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 210.038
       objectReference: {fileID: 0}
     - target: {fileID: 4495119496072986461, guid: 298435d261d4c4642974e12a23af5d7c,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1724317570, guid: 298435d261d4c4642974e12a23af5d7c, type: 3}
-      propertyPath: m_ApplyRootMotion
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1724317570, guid: 298435d261d4c4642974e12a23af5d7c, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 3f4839162cd830949a083ee226c11ff1, type: 2}
-    - target: {fileID: 9156915039625568091, guid: 298435d261d4c4642974e12a23af5d7c,
+    - target: {fileID: 718093161201997607, guid: 298435d261d4c4642974e12a23af5d7c,
         type: 3}
-      propertyPath: m_Enabled
-      value: 1
+      propertyPath: weaponDamage
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6081763833649972556, guid: 298435d261d4c4642974e12a23af5d7c,
+        type: 3}
+      propertyPath: healthPoints
+      value: 200
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 298435d261d4c4642974e12a23af5d7c, type: 3}
