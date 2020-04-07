@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.AI;
@@ -53,6 +52,8 @@ namespace RPG.SceneManagement
 
             Portal otherPortal = GetOtherPortal();
             UpdatePlayer(otherPortal);
+
+            wrapper.Save();
 
             yield return new WaitForSeconds(fadeWaitTime);
             yield return fader.FadeIn(fadeInTime);
