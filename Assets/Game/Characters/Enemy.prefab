@@ -31,6 +31,7 @@ MonoBehaviour:
   patrolPath: {fileID: 0}
   waypointTolerance: 1
   waypointDwelltime: 3
+  patrolSpeedFraction: 0.2
 --- !u!114 &8972783456580690130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50,10 +51,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1724317570, guid: 298435d261d4c4642974e12a23af5d7c, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: d288a0e4a2d923b46898986e979da643, type: 3}
+    - target: {fileID: 718093161201997607, guid: 298435d261d4c4642974e12a23af5d7c,
+        type: 3}
+      propertyPath: weaponDamage
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2582944757449388057, guid: 298435d261d4c4642974e12a23af5d7c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3666443246108807119, guid: 298435d261d4c4642974e12a23af5d7c,
         type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3666443246108807119, guid: 298435d261d4c4642974e12a23af5d7c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4495119496072986461, guid: 298435d261d4c4642974e12a23af5d7c,
         type: 3}
@@ -110,24 +130,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1724317570, guid: 298435d261d4c4642974e12a23af5d7c, type: 3}
-      propertyPath: m_Avatar
-      value: 
-      objectReference: {fileID: 9000000, guid: d288a0e4a2d923b46898986e979da643, type: 3}
-    - target: {fileID: 718093161201997607, guid: 298435d261d4c4642974e12a23af5d7c,
+    - target: {fileID: 6081763833649972556, guid: 298435d261d4c4642974e12a23af5d7c,
         type: 3}
-      propertyPath: weaponDamage
-      value: 10
+      propertyPath: healthPoints
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 9156915039625568090, guid: 298435d261d4c4642974e12a23af5d7c,
         type: 3}
       propertyPath: m_Speed
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6081763833649972556, guid: 298435d261d4c4642974e12a23af5d7c,
-        type: 3}
-      propertyPath: healthPoints
-      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 298435d261d4c4642974e12a23af5d7c, type: 3}
